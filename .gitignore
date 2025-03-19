@@ -1,4 +1,4 @@
-**/test/*jpg
-**/train/*jpg
-**/train_masks/*gif
+**/test/*.jpg
+**/train/*.jpg
+**/train_masks/*.gif
 *.svg
