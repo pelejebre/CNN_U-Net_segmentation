@@ -11,6 +11,25 @@ U-Net es una arquitectura de red neuronal convolucional diseñada originalmente 
 - Adaptar la red para distintos tipos de segmentación de imágenes.
 - Experimentar con diferentes configuraciones y optimizaciones en el entrenamiento.
 
+## 📁 **Estructura del Proyecto**
+Este proyecto consta de tres componentes principales:
+
+1. **[`U-NET.ipynb`](U-NET.ipynb)**: Notebook Jupyter para la experimentación, entrenamiento y prueba del modelo.
+   - Incluye la carga y visualización de datos
+   - Entrenamiento y evaluación del modelo U-NET
+   - Guardado del modelo para uso posterior
+
+2. **[`helpers.py`](helpers.py)**: Módulo Python con funciones auxiliares y clases necesarias.
+   - Implementación de la arquitectura U-NET
+   - Funciones de carga y pre-procesamiento de datos
+   - Métricas de evaluación (Dice, IoU)
+   - Funciones de entrenamiento y visualización
+
+3. **[`unet_visualizer.py`](unet_visualizer.py)**: Aplicación Streamlit para la evaluación interactiva del modelo.
+   - Interfaz visual para seleccionar modelos entrenados
+   - Carga y segmentación de imágenes de prueba
+   - Visualización de resultados con superposición de máscaras
+
 ## 🏗️ **Construcción de la U-Net**
 La red se ha implementado siguiendo la arquitectura descrita en el paper original. Su estructura en forma de "U" consta de dos componentes principales:
 
@@ -47,10 +66,16 @@ cd unet-segmentation-carvama
 pip install -r requirements.txt
 ```
 
-### **3. Ejecutar el Jupyter Notebook**
+### **3. Ejecutar el Jupyter Notebook para el proceso de entrenamiento**
 ```bash
 U-NET.ipynb
 ```
+
+### **4. Ejecutar la aplicación Streamlit para evaluación interactiva**
+```bash
+streamlit run unet_visualizer.py
+```
+![Evaluación](imagenes/UNET_evaluacion_app.png)
 
 ## 🤝 **Contribuciones**
 Las contribuciones son bienvenidas. Para colaborar:
