@@ -2,3 +2,4 @@
 **/train/*.jpg
 **/train_masks/*.gif
 *.svg
+*.pth
